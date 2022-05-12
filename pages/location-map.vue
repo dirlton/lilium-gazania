@@ -21,7 +21,7 @@
         </h3>
         <div class="p-4 space-y-3 bg-white shadow-md">
           <h4 class="text-xl font-semibold tracking-wider text-theme-600">
-            SHOPPING MALLS, MARKET &amp; GROCERIES DOMINIC
+            SHOPPING MALLS, MARKET &amp; GROCERIES
           </h4>
           <div class="space-y-1">
             <h5 class="text-lg font-semibold text-gray-900"></h5>

@@ -440,14 +440,14 @@ export default {
     send() {
       this.errors = []
 
-      if (this.mobile) {
+ /*     if (this.mobile) {
         const prefix = this.mobile.substring(0, 2)
         if (prefix !== '65' || this.mobile.length <= 7) {
           this.errors.push({
             mobile: 'The mobile field contains an invalid number.',
           })
         }
-      }
+      } */
 
       if (!this.errors.length) {
         // eslint-disable-next-line
