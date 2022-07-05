@@ -39,10 +39,3 @@ export default {
   components: { FormBookAppoinment },
 }
 </script>
-
-<style scoped>
-/* .prose p {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
-} */
-</style>

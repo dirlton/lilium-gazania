@@ -12,14 +12,17 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/gtm": "^2.4.0",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "core-js": "^3.15.1",
     "gh-pages": "^3.2.3",
+    "net": "^1.0.2",
     "nuxt": "^2.15.7",
     "nuxt-flatpickr": "^0.0.2",
     "push-dir": "^0.4.1",
+    "tls": "^0.0.1",
     "v-click-outside": "^3.1.2",
     "v-video-embed": "^1.0.8"
   },

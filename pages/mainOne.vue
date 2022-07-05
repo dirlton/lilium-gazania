@@ -397,7 +397,7 @@ export default {
       interest: null,
       errors: '',
       success: false,
-      email_2:'james@limousinetransport.com',
+      email_2:'sales@theliliumofficial.com.sg',
       config: {
         wrap: true,
         altFormat: 'd/m/Y - l',
@@ -451,10 +451,53 @@ export default {
 
       if (!this.errors.length) {
         // eslint-disable-next-line
-       this.$axios
-        .post('http://localhost/test/send_mail.php', {
+        Email.send({
+          Host: 'smtp.gmail.com',
+          Username: process.env.EMAIL_USER,
+          Password: process.env.EMAIL_API,
           To: process.env.EMAIL_USER,
           From: this.email,
+          Subject: 'The Lilium & The Gazania - New Booking Submission' +' [' + this.name +']',
+          Body:
+            '<h3>Dear Dave, </h3>' +
+            '<h4>Below are the details for the New Booking Submission, do check it out: </h4>' +
+            '<h4>Date: ' + this.date + '</h4>' +
+            '<h4>Time: ' + this.time + '</h4>' +
+            '<h4>Bedroom Size: ' + this.bedroom + '</h4>' +
+            '<h4>Name: ' + this.name + '</h4>' +
+            '<h4>Email: ' + this.email + '</h4>' +
+            '<h4>Mobile: ' + this.mobile + '</h4>' +
+            '<h4>Level Of Interest: ' + this.interest + '</h4>' +
+            '<br><h4>Thanks, </h4>' + 
+            '<h4>The Lilium & The Gazania</h4>',
+        }).then(() => {
+        /*  // will pass to the ddave@singhaiyi.com
+          Email.send({
+          Host: 'smtp.gmail.com',
+          Username: process.env.EMAIL_USER,
+          Password: process.env.EMAIL_API,
+          To: this.email_3,
+          From: this.email_2,
+          Subject: 'The Lilium & The Gazania - New Booking Submission' +' [' + this.name +']',
+          Body:
+            '<h3>Dear Dave, </h3>' +
+            '<h4>Date: ' + this.date +  '</h4>' +
+            '<h4>Time: ' + this.time +  '</h4>' +
+            '<+>Bedroom Size: ' + this.bedroom + '</h4>' +
+            '<h4>Name: ' + this.name + '</h4>' +
+            '<h4>Email: ' + this.email +  '</h4>' +
+            '<h4>Mobile: ' + this.mobile +  '</h4>' +
+            '<h4>Level Of Interest: ' + this.interest + '</h4>' +
+            '<br><h4>Thanks, </h4>' + 
+            '<h4>The Lilium & The Gazania</h4>', 
+        }) */
+        // will pass to the user using sales@theliliumofficial.com.sg
+          Email.send({
+          Host: 'smtp.gmail.com',
+          Username: process.env.EMAIL_USER,
+          Password: process.env.EMAIL_API,
+          To: this.email,
+          From: this.email_2,
           Subject: 'The Lilium & The Gazania - Receipt Acknowledgement for Appointment',
           Body:
             '<h3><b>Dear ' + this.name + '</b><h3>' + 
@@ -469,30 +512,9 @@ export default {
             '<h4>Have a nice day ahead!</h3><br>' + 
             '<h4>Thanks,</h4>' + 
             '<h4>The Lilium & The Gazania</h4>',
-        }).then(() => {
-        this.$axios
-        .post('http://localhost/test/send_mail.php', {
-          To: process.env.EMAIL_USER,
-          From: this.email_2,
-          Subject: 'The Lilium & The Gazania - New Booking Submission' +' [' + this.name +']',
-          Body:
-            '<h3>Dear Dave, </h3>' +
-            '<h4>Below are the details for the New Booking Submission, do check it out: </h4>' +
-            '<h4>Date: ' + this.date + '</h4>' +
-            '<h4>Time: ' + this.time + '</h4>' +
-            '<h4>Bedroom Size: ' + this.bedroom + '</h4>' +
-            '<h4>Name: ' + this.name + '</h4>' +
-            '<h4>Email: ' + this.email + '</h4>' +
-            '<h4>Mobile: ' + this.mobile + '</h4>' +
-            '<h4>Level Of Interest: ' + this.interest + '</h4>' +
-            '<br><h4>Thanks, </h4>' + 
-            '<h4>The Lilium & The Gazania</h4>',
         })
-          console.log()
           this.success = true
           this.reset()
-        }).catch( () => {
-          
         })
       }
     },
