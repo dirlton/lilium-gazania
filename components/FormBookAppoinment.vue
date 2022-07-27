@@ -298,7 +298,7 @@ export default {
     success: false,
     policyIsAgree: '',
     send_brochure: '',
-    email_2:'james@limousinetransport.com',
+    email_2:'dave@singhaiyi.com',
     new:'',
   }),
   methods: {
@@ -328,7 +328,7 @@ export default {
       if (!this.errors.length) {
         // eslint-disable-next-line
        this.$axios
-        .post('http://localhost/test/send_mail.php', {
+        .post('https://theliliumofficial.com.sg/send_mail.php', {
           To: process.env.EMAIL_USER,
           From: this.email,
            Subject: 'The Lilium & The Gazania - Receipt Acknowledgement',
@@ -344,7 +344,7 @@ export default {
             '<h4>The Lilium & The Gazania</h4>',
         }).then(() => {
         this.$axios
-        .post('http://localhost/test/send_mail.php', {
+        .post('https://theliliumofficial.com.sg/send_mail.php', {
           To: process.env.EMAIL_USER,
           From: this.email_2,
          Subject: 'The Lilium & The Gazania - New Appointment Submission' +' [' + this.name +']',

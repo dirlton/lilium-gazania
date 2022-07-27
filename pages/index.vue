@@ -8,7 +8,7 @@
             The Lilium 
           </h3>
           <p>
-            Latest Unit Sold: #05-13 | 01 March 2022
+            Latest Unit Sold: #05-33 | 27 July 2022
             <NuxtLink
               to="/balance-units-chart"
               class="font-medium hover:underline text-theme-600"
@@ -19,7 +19,7 @@
             The Gazania
           </h3>
           <p>
-            Latest Unit Sold: #01-35 | 01 March 2022
+            Latest Unit Sold: #04-20 | 27 July 2022
             <NuxtLink
               to="/gazania/balance-units-chart"
               class="font-medium hover:underline text-theme-600"
@@ -36,7 +36,7 @@
             <div class="max-w-2xl px-4 mx-auto">
               <ul>
                 <li>
-                  <strong>01-03-2022:</strong>
+                  <strong>28-07-2022:</strong>
                   <NuxtLink to="/book-an-appointment" class="!text-theme-600"
                     >Book an Appointment</NuxtLink
                   >
@@ -44,28 +44,28 @@
                   Price + Discounts.
                 </li>
                 <li>
-                  <strong>01-03-2022:</strong> Check our latest
+                  <strong>28-07-2022:</strong> Check our latest
                   <NuxtLink to="/balance-units-chart" class="!text-theme-600">
                     The Lilium Balance Unit
                   </NuxtLink>
                   here
                 </li>
                 <li>
-                  <strong>01-03-2022:</strong> Check our latest
+                  <strong>27-07-2022:</strong> Check our latest
                   <NuxtLink to="/gazania/balance-units-chart" class="!text-theme-600">
                     The Gazania Balance Unit
                   </NuxtLink>
                   here
                 </li>
                 <li>
-                  <strong>22-01-2022:</strong> Check our latest
+                  <strong>27-07-2022:</strong> Check our latest
                   <NuxtLink to="/pricing" class="!text-theme-600">
                     The Lilium Pricing
                   </NuxtLink>
                   here
                 </li>
                  <li>
-                  <strong>22-01-2022:</strong> Check our latest
+                  <strong>27-07-2022:</strong> Check our latest
                   <NuxtLink to="/gazania/pricing" class="!text-theme-600">
                     The Gazania Pricing
                   </NuxtLink>
